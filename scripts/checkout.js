@@ -1,4 +1,4 @@
-import { cart , removeFromCart } from "../data/cart.js";
+import { cart , removeFromCart,updateCartQuantity } from "../data/cart.js";
 
 import { products } from "../data/products.js";
 
@@ -105,5 +105,15 @@ document.querySelectorAll('.js-delete-link').forEach((link)=>{
     const container =  document.querySelector(`.js-cart-item-container-${productId}`);
 
     container.remove();
+
+    const cartQuantity = updateCartQuantity();
+
+  document.querySelector('.js-return-to-home-link')
+  .innerHTML = `${cartQuantity} items`;
   });
 });
+
+const cartQuantity = updateCartQuantity();
+
+document.querySelector('.js-return-to-home-link')
+  .innerHTML = `${cartQuantity} items`;

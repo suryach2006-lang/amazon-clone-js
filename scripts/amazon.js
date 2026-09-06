@@ -1,5 +1,5 @@
-import { cart,addToCart,updateCartQuantity } from "../data/cart.js";
-import { products } from "../data/products.js";
+import { cart,addToCart,updateCartQuantity } from "./data/cart.js";
+import { products } from "../scripts/data/products.js"
 
 let productsHTML = '';
 

@@ -1,6 +1,6 @@
-import { cart,updateCartQuantity } from "../../data/cart.js";
-import { getDeliveryOption } from "../../data/deliveryOptions.js";
-import { getProduct, products } from "../../data/products.js";
+import { cart,updateCartQuantity } from "../data/cart.js";
+import { getDeliveryOption } from "../data/deliveryOptions.js";
+import { getProduct, products } from "../data/products.js";
 
 export function renderPaymentSummary(){
     let productPriceRupees=0;
